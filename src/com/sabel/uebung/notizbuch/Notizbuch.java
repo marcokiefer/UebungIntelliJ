@@ -4,15 +4,15 @@ import java.util.ArrayList;
 
 public class Notizbuch {
     private ArrayList<String> notizen;
-
+    // Default Konstruktor
     public Notizbuch() {
         notizen = new ArrayList<>();
     }
-
+    // Methode zum hinzugfuegen
     public void hinzufuegen(String notiz) {
         notizen.add(notiz);
     }
-    //Methode löschen
+    // Methode löschen
     public String loescheNotiz(int index) {
         if (index < 0 || index >= anzahlNotizen()) {
             System.out.println("Falscher Index");
@@ -40,7 +40,6 @@ public class Notizbuch {
     public void alleNotizenAnzeigen() {
         for (String notiz : notizen)
             System.out.println(notiz);
-
     }
 
     public String toString() {
