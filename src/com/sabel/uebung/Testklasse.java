@@ -8,7 +8,7 @@ public class Testklasse {
 //        person.druckeInfo();
 //        System.out.println(person);
 
-        System.out.println("--------------------------");
+        System.out.println("Testausgabe");
 
         //
 //        int zahl = 101;
