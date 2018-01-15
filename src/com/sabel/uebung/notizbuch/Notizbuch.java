@@ -37,9 +37,13 @@ public class Notizbuch {
         }
     }
 
+   // 15.01.18 Schleife für die Ausgabe
     public void alleNotizenAnzeigen() {
-        for (String notiz : notizen)
-            System.out.println(notiz);
+        int index = 0;
+        while (index < notizen.size()){
+            System.out.println(notizen.get(index));
+            index ++;
+        }
     }
 
     public String toString() {
