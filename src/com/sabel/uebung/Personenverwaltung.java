@@ -48,25 +48,49 @@ public class Personenverwaltung {
             return personen.remove(index);
          //   return zuloeschendePerson;
         }
-//
-//    public Person gibPerson(int index){
-//
-//    }
-//
-//    public void allePersonenAnziegen(){
-//
-//    }
-//
-//    public double berechneDurchschnittsalter(){
-//
-//    }
 
+     public Person gibPerson(int index){
+        if (index >=0 && index < anzahlPersonen()){
+            return personen.get(index);
+        }
+        return null;
+    }
+
+    public void allePersonenAnziegen(){
+        // for-each
+        for (Person person : personen) {
+            System.out.println(person);
+        }
+    }
+
+    public double berechneDurchschnittsalter(){
+        int summe = 0;
+        for (Person person : personen) {
+            summe += person.getAlter();
+
+        }
+        return (double)summe / anzahlPersonen();       //double gecastet
+    }
+
+    public ArrayList<Person> gibPersonenAelterAls(int alter) {
+        ArrayList<Person> personenAelterAls = new ArrayList<>();
+        for (Person person : personen) {
+            if(person.getAlter() > alter){
+               personenAelterAls.add(person);
+            }
+        }
+        return personenAelterAls;
+    }
 
     @Override
     public String toString() {
-        return "Personenverwaltung{" +
-                "person=" + personen +
-                ", maxAnzahlPersonen=" + maxAnzahlPersonen +
-                '}';
+        String result = "Personenverwaltung: Maximale Anzahl Personen: " + maxAnzahlPersonen;
+        result += "\nAktuelle Personenanzahl: " + anzahlPersonen();
+        result += "\nFolgende Personen sind enthalten: ";
+        for (Person person : personen) {
+            result += "\n" + person.toString();
+        }
+
+        return result;
     }
 }
