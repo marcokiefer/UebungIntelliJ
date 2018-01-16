@@ -38,6 +38,9 @@ public class Testklasse {
             System.out.println(person2);
 
         }
+        Person gesuchtePerson = personenverwaltung.findePerson("Tanja");
+        System.out.println("Gesuchte Person:" + gesuchtePerson.toString());
+
         System.out.println("---------Programm ENDE------");
         vergleichenVonObjekten();
         //
