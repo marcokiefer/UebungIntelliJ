@@ -36,8 +36,10 @@ public class Testklasse {
         ArrayList<Person> personenAelterAls30 = personenverwaltung.gibPersonenAelterAls(30);
         for (Person person2 : personenAelterAls30) {
             System.out.println(person2);
+
         }
         System.out.println("---------Programm ENDE------");
+        vergleichenVonObjekten();
         //
 //        int zahl = 101;
 //        while (zahl <250){
@@ -45,6 +47,49 @@ public class Testklasse {
 //            zahl = zahl +2;
 //        }
 
+    }
+    public static void vergleichenVonObjekten(){
+        // primitiver Datentyp -> Wert liegt direkt in der Speicherzelle -> Wertevergleich
+        // Primitive Datentypen
+        int zahl1 = 42;
+        int zahl2 = 42;
+        if (zahl1 == zahl2){
+            System.out.println("gleich");
+        } else {
+            System.out.println("ungleich");
+        }
+
+        // Referezielle Datentypen
+        Person person1 = new Person("Andreas",41);
+        Person person2 = new Person("Andreas",41);
+        // Referenzvergleich
+        if (person1 == person2){
+            System.out.println("Referenzvergleich: gleich");
+        } else {
+            System.out.println("Referenzvergleich: ungleich");
+        }
+        // Objektvergleich
+        // Methode equals
+        if (person1.equals(person2)){
+            System.out.println("Objektvergleich: gleich");
+        } else {
+            System.out.println("Objektvergleich: ungleich");
+        }
+
+        String strl1 = "Hallo";
+        String strl2 = new String("Hallo");
+        if (strl1 == strl2){
+            System.out.println("Referenzvergleich: gleich");
+        } else {
+            System.out.println("Referenzvergleich: ungleich");
+        }
+
+        if (strl1.equals(strl2)){
+            System.out.println("Referenzvergleich: gleich");
+        } else {
+            System.out.println("Referenzvergleich: ungleich");
+        }
 
     }
+
 }
