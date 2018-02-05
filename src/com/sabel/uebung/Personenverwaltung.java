@@ -11,7 +11,7 @@ public class Personenverwaltung {
             // + loeschePerson (index:int) : Person
             // + gibtPerson(index:int) : Person
             // + allePersonenAnzeigen(): void
-            // + toString() : String d
+            // + toString() : String
 
     private ArrayList<Person> personen;
     private int maxAnzahlPersonen;
