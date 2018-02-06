@@ -86,6 +86,14 @@ public class Mathe {
         }
         return position;
     }
+    public static int[] kopiere (int[] a){
+        int [] kopie = new int[a.length];
+        for (int i = 0; i < kopie.length; i++) {
+            kopie[i] = a[i];
+        }
+        return kopie;
+    }
+
 
 
 
