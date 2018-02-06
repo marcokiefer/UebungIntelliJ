@@ -20,6 +20,10 @@ public class Temperaturmessung {
             messwerte[i] = generiereZufallstemperatur(0,10);
         }
         druckeMesswserte(messwerte);
+        System.out.println("Kälteste Temperatur war: " + kaehltesteTemperatur(messwerte)+ " °C");
+        int waermsterTag = waermsterTag(messwerte);
+        System.out.println("Wärmster Tag war: " + waermsterTag(messwerte) + " mit " + messwerte[waermsterTag] + " °C");
+        System.out.println("Durschnittstemperatur: " + durschnittsTemperatur(messwerte));
     }
 
     public static double generiereZufallstemperatur(){
@@ -30,23 +34,37 @@ public class Temperaturmessung {
     public static double generiereZufallstemperatur(int min, int max){
         return Math.random() * (max - min) + min;
     }
-
-    public static double berechneMaxTemp(double [] messwerte){
-        double max = messwerte[0];
-        int position = 0;
-        for (int i = 0; i < messwerte.length; i++) {
-            if(messwerte[i] > max){
-                max = messwerte[i];
-                position = i;
+    public static double kaehltesteTemperatur(double [] messwerte){
+        double min = messwerte[0];
+        for (int i = 1; i < messwerte.length; i++) {
+            if (messwerte[i] < min){
+                min = messwerte[i];
             }
         }
-        return position;
+        return min;
     }
+    public static int waermsterTag(double[] messwerte){
+        double max = messwerte [0];
+        int tag = 0;
+        for (int i = 1; i < messwerte.length; i++) {
+            if (messwerte [i] > max){
+                max = messwerte[i];
+                tag = i;
+            }
+        }
+        return tag;
+    }
+    public static double durschnittsTemperatur(double[] messwerte){
+        double summe = 0.0;
+        for (int i = 0; i < messwerte.length; i++) {
+            summe += messwerte[i];
+        }
+        return summe / messwerte.length;
+    }
+
     public static void druckeMesswserte(double[] messwerte){
         for (double messwert : messwerte){
             System.out.println(messwert);
         }
     }
-
-
 }
