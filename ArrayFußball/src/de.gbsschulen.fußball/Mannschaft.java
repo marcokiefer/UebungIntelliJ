@@ -27,23 +27,39 @@ public class Mannschaft {
         return ausgewechselterSpieler;
     }
 
-    public void druckeMannschaftsaufstellung() {
+    public void druckeAufstellung() {
         System.out.println(name);
-        for (int i = 1; i < aufstellung.length; i++) {
-            Spieler spieler = aufstellung[i];
-            if (spieler != null) {
+        int i = 1;
+        for (Spieler spieler : aufstellung) {
+            if (spieler != null){
                 System.out.println(i + " " + spieler.getName());
-            } else {
-                return;
+            }
+            i++;
+        }
+    }
+    public void printAufstellung() {
+        System.out.println(name);
+        for (int i = 0; i < this.aufstellung.length; i++) {
+            Spieler spieler = this.aufstellung[i];
+            if (spieler != null){
+                System.out.println((i+1) + "" + spieler.getName());
             }
         }
     }
 
     public int anzahlTore(){
-        int toreGesamt = 0;
-        for (int i = 1; i < aufstellung.length; i++) {
-            toreGesamt = aufstellung[i].getAnzahlTore();
+        int anzahl = 0;
+        for (Spieler spieler : aufstellung) {
+            if (spieler != null) {
+                anzahl += spieler.getAnzahlTore();
+            }
         }
-        return toreGesamt;
+        return anzahl;
     }
+
+    public Spieler gibTorschuetzenkoeing(){
+        return null;
+    }
+
+
 }
