@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abzaehlreim/Abzaehlreim.iml" filepath="$PROJECT_DIR$/Abzaehlreim/Abzaehlreim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayFußball/ArrayFußball.iml" filepath="$PROJECT_DIR$/ArrayFußball/ArrayFußball.iml" />
       <module fileurl="file://$PROJECT_DIR$/Uebung.iml" filepath="$PROJECT_DIR$/Uebung.iml" />
     </modules>
   </component>

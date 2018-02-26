@@ -1,4 +1,4 @@
-package com.sabel.abzaehlreim;
+package de.gbsschulen.abzaehlreim;
 
 import java.util.Scanner;
 
