@@ -23,11 +23,13 @@ public class Testklasse {
             System.out.println("Ausgewechselt wurde: " + ausgewechselterSpieler.getName());
         }
 
-
+        Spielplan spielplan = new Spielplan();
+        spielplan.anmelden(mannschaft);
+        spielplan.druckeTunier();
+        Mannschaft mannschaft1 = new Mannschaft("Real Madrid");
+        spielplan.anmelden(mannschaft1);
+        spielplan.druckeTunier();
 
     }
-
-
-
 
 }

@@ -18,13 +18,13 @@ public class Mannschaft {
     }
 
     public Spieler aufstellen(Spieler spieler, int position) {
-        if(position < 0 || position >= this.aufstellung.length){
-            System.out.println("Position " + position +" ist falsch");
-            return null;
+        if(position >= 0 && position < aufstellung.length){
+            Spieler ausgewechselterSpieler = this.aufstellung[position];
+            this.aufstellung[position] = spieler;
+            return ausgewechselterSpieler;
         }
-        Spieler ausgewechselterSpieler = this.aufstellung[position];
-        this.aufstellung[position] = spieler;
-        return ausgewechselterSpieler;
+        System.out.println("Position " + position +" ist falsch");
+        return null;
     }
 
     public void druckeAufstellung() {
@@ -57,8 +57,21 @@ public class Mannschaft {
         return anzahl;
     }
 
-    public Spieler gibTorschuetzenkoeing(){
-        return null;
+    public Spieler gibTorschuetzenkoeing() {
+        Spieler koenig = null;
+        int maxTore = 0;
+        for (Spieler spieler : aufstellung) {
+            if (spieler != null && spieler.getAnzahlTore() > maxTore) {
+                maxTore = spieler.getAnzahlTore();
+                koenig = spieler;
+            }
+        }
+        return koenig;
+    }
+
+    @Override
+    public String toString(){
+        return name;
     }
 
 

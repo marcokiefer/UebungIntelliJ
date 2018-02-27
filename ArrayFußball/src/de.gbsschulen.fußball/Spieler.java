@@ -1,5 +1,7 @@
 package de.gbsschulen.fußball;
 
+import java.util.Objects;
+
 public class Spieler {
     private String name;
     private int anzahlTore;
@@ -40,4 +42,19 @@ public class Spieler {
         System.out.println("Name: " + name + ", " + "Spielposition: " + spielPosition + ", " + "Anzahl geschossene Tore: " + anzahlTore);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Spieler spieler = (Spieler) o;
+        return anzahlTore == spieler.anzahlTore &&
+                Objects.equals(name, spieler.name) &&
+                Objects.equals(spielPosition, spieler.spielPosition);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(name, anzahlTore, spielPosition);
+    }
 }
