@@ -1,31 +1,40 @@
 package de.gbsschulen.ball;
 
 public class Ballnetz {
-    private Ball [] baelle;
-    private int maxAnzahlBaelle;
-    private int anzahlBaelle;
+    protected Ball [] baelle;
+    protected int maxAnzahlBaelle;
+    protected int anzahlBaelle;
 
     public Ballnetz(int maxAnzahlBaelle) {
         this.baelle = new Ball[maxAnzahlBaelle];
         this.maxAnzahlBaelle = maxAnzahlBaelle;
+        this.anzahlBaelle = 0;
+    }
+    public boolean istVoll(){
+        return anzahlBaelle >= baelle.length;
+    }
+    public boolean istLeer(){
+        return anzahlBaelle == 0;
     }
     
     public boolean hinzufuegen(Ball ball){
-        for (int i = 0; i < maxAnzahlBaelle; i++) {
-            baelle[i] = ball;
+        if(anzahlBaelle < baelle.length){
+            baelle[anzahlBaelle] = ball;
+            anzahlBaelle++;
             return true;
         }
         System.out.println("Maximale Anzahl der Bälle ist: " + maxAnzahlBaelle);
         return false;
     }
 
-    public Ball entfernen (int i){
-        Ball zuEntfernenderBall = baelle[i];
-        if (i < 0 && i > baelle.length){
+    public Ball entfernen(int i){
+        if(i <= 0) {
             System.out.println("Falscher Index");
             return null;
         }
-        return zuEntfernenderBall;
+        this.anzahlBaelle--;
+        Ball entfernterBall = baelle[i];
+        return entfernterBall;
     }
 
     public void druckeBall(int i){
