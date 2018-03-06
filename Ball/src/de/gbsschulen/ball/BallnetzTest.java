@@ -13,5 +13,23 @@ public class BallnetzTest {
         assertNotNull(testBallnetz);
     }
 
+    @Test
+    public void hinzufuegenTest(){
+        testBallnetz = new Ballnetz(5);
+        Ball ball = new Ball(25);
+        boolean result = testBallnetz.hinzufuegen(ball);
+        assertEquals(1,testBallnetz.anzahlBaelle);
+        assertNotNull(testBallnetz.baelle[0]);
+    }
+
+    @Test
+    public void entferneBall(){
+        testBallnetz = new Ballnetz(4);
+        Ball ball = new Ball(35);
+        testBallnetz.hinzufuegen(ball);
+        assertEquals(1,testBallnetz.anzahlBaelle);
+        testBallnetz.entfernen(0);
+    }
+
 
 }
