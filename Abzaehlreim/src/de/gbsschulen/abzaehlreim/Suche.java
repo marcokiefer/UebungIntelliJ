@@ -3,14 +3,11 @@ package de.gbsschulen.abzaehlreim;
 import java.lang.reflect.Array;
 
 public class Suche {
-    private int [] a;
+    protected int[] test;
 
-    public Suche(int i) {
-        this.a = new int[i];
-    }
 
     // Lineare Suche
-    public static int lineareSuche(int[ ] a, int key) {
+    public static int lineareSuche(int[] a, int key) {
         int i;
         for (i = 0; i < a.length && a[i] != key; i++) ;
         if (i == a.length) {
@@ -19,7 +16,7 @@ public class Suche {
             return i;
         }
     }
-// Variante 2
+    // Variante 2
     public static int lineareSuche2(int[] a, int key) {
         for (int i = 0; i <= a.length  ; i ++ ) {
             if ( a[i] == key ) {
@@ -79,37 +76,4 @@ public class Suche {
         }
         return aktellePos;
     }
-    // Selection Sort
-    public static void selectionSort(int[] a){
-        for(int i = 0; i < a.length -1; i++) {
-            int min = a[i];
-            int pos = i;
-            for(int j = i+1; j < a.length; j ++) {
-                if(a[j] < min) {
-                    min = a[j];
-                    pos = j;
-                }
-            }
-            a[pos] = a[i];
-            a[i] = min;
-        }
-    }
-
-    // BubbleSort (gibt mehrere Möglickeiten zur Umsetzung´)
-    public static void bubbleSort(int []a){
-        boolean getauscht;
-        do {
-            getauscht = false;
-            for (int i = 0; i < a.length-1; i ++) {
-                if (a[i] > a[i+1]){
-                    int temp = a[i];
-                    a[i] = a[i+1];
-                    a[i+1] = temp;
-                    getauscht = true;
-                }
-            }
-        } while (getauscht);
-    }
-
-
 }
