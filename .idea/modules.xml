@@ -3,12 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Abzaehlreim/Abzaehlreim.iml" filepath="$PROJECT_DIR$/Abzaehlreim/Abzaehlreim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithmen/Algorithmen.iml" filepath="$PROJECT_DIR$/Algorithmen/Algorithmen.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArrayFußball/ArrayFußball.iml" filepath="$PROJECT_DIR$/ArrayFußball/ArrayFußball.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ball/Ball.iml" filepath="$PROJECT_DIR$/Ball/Ball.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bibliothek/Bibliothek.iml" filepath="$PROJECT_DIR$/Bibliothek/Bibliothek.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sortieren/Sortieren.iml" filepath="$PROJECT_DIR$/Sortieren/Sortieren.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Telefonbuch/Telefonbuch.iml" filepath="$PROJECT_DIR$/Telefonbuch/Telefonbuch.iml" />
       <module fileurl="file://$PROJECT_DIR$/Uebung.iml" filepath="$PROJECT_DIR$/Uebung.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Ball/de.gbsschule.ball.iml" filepath="$PROJECT_DIR$/Ball/de.gbsschule.ball.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Ball/de.gbsschulen.ball.iml" filepath="$PROJECT_DIR$/Ball/de.gbsschulen.ball.iml" />
     </modules>
   </component>
 </project>

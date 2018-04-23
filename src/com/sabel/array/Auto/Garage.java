@@ -1,4 +1,4 @@
-package de.gbsschulen.autos;
+package com.sabel.array.Auto;
 
 public class Garage {
     private Auto [] autos;

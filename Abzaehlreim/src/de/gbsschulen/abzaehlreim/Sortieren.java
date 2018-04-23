@@ -32,4 +32,18 @@ public class Sortieren {
             }
         } while (getauscht);
     }
+
+    public static void insertionSort(int[] a){
+        int i, j, t;
+        for(i=1; i<a.length; i++) {
+            j = i;
+            t = a[j];
+            while (j > 0 && a[j - 1] > t) {
+                a[j] = a[j - 1];
+                j--;
+            }
+            a[j] = t;
+        }
+    }
 }
+

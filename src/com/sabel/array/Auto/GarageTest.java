@@ -1,4 +1,4 @@
-package de.gbsschulen.autos;
+package com.sabel.array.Auto;
 
 import org.junit.Before;
 import org.junit.Test;

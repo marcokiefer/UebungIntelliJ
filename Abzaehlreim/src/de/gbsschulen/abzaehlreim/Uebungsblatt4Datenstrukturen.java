@@ -75,8 +75,4 @@ public class Uebungsblatt4Datenstrukturen {
         bubbleSort(testBubble2);
 
     }
-
-
-
-
 }
