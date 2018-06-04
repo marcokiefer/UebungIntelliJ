@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/3Schulaufgabe/3Schulaufgabe.iml" filepath="$PROJECT_DIR$/3Schulaufgabe/3Schulaufgabe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstraktion/Abstraktion.iml" filepath="$PROJECT_DIR$/Abstraktion/Abstraktion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Abzaehlreim/Abzaehlreim.iml" filepath="$PROJECT_DIR$/Abzaehlreim/Abzaehlreim.iml" />
       <module fileurl="file://$PROJECT_DIR$/Algorithmen/Algorithmen.iml" filepath="$PROJECT_DIR$/Algorithmen/Algorithmen.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArrayFußball/ArrayFußball.iml" filepath="$PROJECT_DIR$/ArrayFußball/ArrayFußball.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ball/Ball.iml" filepath="$PROJECT_DIR$/Ball/Ball.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bibliothek/Bibliothek.iml" filepath="$PROJECT_DIR$/Bibliothek/Bibliothek.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DatabaseOfMultimediaEntertainment/DatabaseOfMultimediaEntertainment.iml" filepath="$PROJECT_DIR$/DatabaseOfMultimediaEntertainment/DatabaseOfMultimediaEntertainment.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sortieren/Sortieren.iml" filepath="$PROJECT_DIR$/Sortieren/Sortieren.iml" />
       <module fileurl="file://$PROJECT_DIR$/Telefonbuch/Telefonbuch.iml" filepath="$PROJECT_DIR$/Telefonbuch/Telefonbuch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Testklasse/Testklasse.iml" filepath="$PROJECT_DIR$/Testklasse/Testklasse.iml" />
       <module fileurl="file://$PROJECT_DIR$/Uebung.iml" filepath="$PROJECT_DIR$/Uebung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vererbung/Vererbung.iml" filepath="$PROJECT_DIR$/Vererbung/Vererbung.iml" />
     </modules>
   </component>
 </project>

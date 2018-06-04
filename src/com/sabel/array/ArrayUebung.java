@@ -7,7 +7,7 @@ public class ArrayUebung {
             int temp = quadrat[i];
             System.out.print(temp + ", ");
         }
-    druckeArray(quadrat);
+        druckeArray(quadrat);
     }
     public static void druckeArray(int [] a){
         int index = 0;
@@ -16,7 +16,5 @@ public class ArrayUebung {
             index ++;
         }
     }
-
-
 
 }

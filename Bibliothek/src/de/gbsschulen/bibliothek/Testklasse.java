@@ -15,6 +15,8 @@ public class Testklasse {
         if( test != null ) {
             System.out.println("Gesuchtes Buch: " + test);
         }
+        System.out.println("");
+        System.out.println(bibliothek);
     }
 
 

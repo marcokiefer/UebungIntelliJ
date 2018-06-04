@@ -27,6 +27,10 @@ public class Bibliothek {
     public String toString() {
         String result = "";
         Set<String> keys = map.keySet();
+        for (String isbn : keys) {
+            result += "ISBN: " + isbn + ", Titel: " + this.map.get(isbn).getTitel() + "\n";
+        }
+        return result;
 
     }
 
